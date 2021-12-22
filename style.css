@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    background-color: lightblue;
+    position: relative;
+    min-height: 100vh;
+}
+
+.boodschap{
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform:translateX(-50%);
+    z-index: 1;
+    color: red;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.sneeuwvlok{
+    position: absolute;
+    top: 0px;
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius:50%;
+    animation: sneeuw 3s infinite linear;
+    z-index: 1;
+}
+
+@keyframes sneeuw{
+    to{
+        top: 90%;
+    }
+}
+
+.grond{
+    position: relative;
+    top: 80vh;
+    height: 20vh;
+    width: 100%;
+    background: linear-gradient(180deg, #eeeeee 10%, white 90%);
+}
+
+.bol{
+    position: relative;
+    background: radial-gradient(#fff, #cdd);
+    border-radius: 50%;
+    bottom: 70%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.sneeuwpop{
+    position: relative;
+    bottom: 150px;
+}
+
+.groot{
+    top: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.middel{
+    width: 150px;
+    height: 150px;
+}
+
+.klein{
+    width: 100px;
+    height: 100px;
+}
+
+.hoed{
+    position: relative;
+    height: 20px;
+    width: 100px;
+    background: black;
+    border-radius: 50%;
+}
+
+.hoed::after{
+    content:'';
+    background: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 8px;
+    bottom: 10px;
+    width: 80px;
+    height: 60px;
+}
+
+.knoop{
+    position: absolute;
+    left: calc(50% - 7px);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background :black;
+}
+
+.n1{
+    top: 50px;
+}
+
+.n2{
+    top: 75px;
+}
+
+.n3{
+    top: 100px;
+}
+
+.sjaal{
+    position: relative;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 90px;
+    height: 30px;
+
+    border-radius: 15px;
+    background: red;
+}
+
+.sjaal::before{
+    content: '';
+    position: absolute;
+    top: -5px;
+    right: 0px;
+
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsl(0,50%,50%);
+}
+
+.sjaal::after{
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 45px;
+
+    width: 70px;
+    height: 40px;
+    border-radius: 50%;
+    background: hsl(0,50%,50%);
+
+    transform-origin: right top;
+    transform: rotate(-120deg);
+    background: red;
+    z-index: -1;
+}
+
+.oog{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 35px;
+    border-radius: 50%;
+    background :black;
+}
+
+.o1{
+    left: 30%;
+}
+.o2{
+    right: 30%;
+}
+
+.neus{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%);
+    background: radial-gradient(orange, red);
+    border-radius: 50%;
+}
