@@ -3,6 +3,7 @@ body{
     background-color: lightblue;
     position: relative;
     min-height: 100vh;
+    overflow: hidden;
 }
 
 .boodschap{
@@ -40,7 +41,7 @@ body{
     position: relative;
     top: 80vh;
     height: 20vh;
-    width: 100%;
+    width: 100vw;
     background: linear-gradient(180deg, #eeeeee 10%, white 90%);
 }
 
